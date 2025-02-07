@@ -1,7 +1,9 @@
 import React from 'react'
 import {ArrowLeft } from './icons'
 import { useNavigate } from 'react-router-dom'
-import { fireworks,christmas } from '../assets';
+import catLoveGif from '../assets/Cat Love Sticker by Tonton Friends.gif';
+import fireworks from '../assets/fireworks.gif'; 
+
 
 function Closing() {
   const navigate = useNavigate();
@@ -22,17 +24,18 @@ function Closing() {
 
         {/* Christmas tree */}
         <div className="z-10 mb-8">
-          <img
-            src={christmas}
-            alt="Animated Christmas Tree"
-            className="w-64 h-64 object-contain"
-          />
+        <img
+  src={catLoveGif}  // This will be your new GIF
+  alt="Cat Love Sticker"
+  className="w-64 h-64 object-contain"
+/>
+
         </div>
 
         {/* Greeting text */}
         <div className='w-[90%] max-w-[400px]'>
           <p className="z-10 text-white text-center text-xl font-semibold px-4 drop-shadow-lg">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, delectus? Ut delectus voluptatibus consequatur ex.
+            Thank you for taking the time to read this letter. I hope you enjoyed the journey down memory lane as much as I did making this one. I appreciate every bits of you mahal. Happy Valentine's Day! I love you! 💖
           </p>
 
         {/* Button */}

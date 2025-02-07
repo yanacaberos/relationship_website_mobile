@@ -106,7 +106,12 @@ overflow-x: hidden;
   font-size: 16px;
   font-weight: 900;
   text-align: center;
+  white-space: normal; /* Allows the text to wrap naturally */
+  word-wrap: break-word; /* Breaks long words if they don't fit */
+  max-height: 100px; /* Set a maximum height for the message box */
+  overflow-y: auto; /* Enables vertical scrolling if the content exceeds the max height */
 }
+
 
 .envelope {
   position: relative;

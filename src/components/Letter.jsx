@@ -68,7 +68,7 @@ function Letter() {
               <div className="letter" ref={letterRef}>
                 <div className="body">
                   <span className="close">x</span>
-                  <div className="message">Hi, I love you so much</div>
+                  <div className="message">Hello my lover! I hope you're happy with this litol gift of mine ngayong valentine's hehe. I'm sorry I can't gib u flowers yet kasi I'm kinda short sa budget. Anyways, I just wanna say that I am very grateful for your existence. Alam mo naman na since the day we met, I had this crazy turnaround sa buhay ko wherein I became so motivated to excel in classes, and I will give the credit to you for that always. Thank you for bringing me the warm energy everyday by just simply talking to me. One of the things I don't like the most is promising and expecting something, but with you I don't wanna lose the chance to say this, I will try my very best to stay by your side and I hope also na sana habang buhay ka nandito beside me. Mahal kita sobra. Palagi mo tatandaan yan okei? But if ever there comes a time where my words fails. I hope you remember how grateful I am for your existence. I just want you also to know that if I was given a chance to redo things, I would always choose to cross paths with you, and I wouldn't ever forget to bring my watch with me so that we won't ever lose our very first interaction that turned into this beautiful relationship. I love you so much, adhi. Happy Valentine's, lover.</div>
                 </div>
               </div>
             </div>

@@ -3,58 +3,66 @@ import { ArrowLeft } from "./icons";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useRef } from "react";
-import { heavenly,sparks,brandy,bruno,greenday,kanye,sunsetz,souljaboy } from "../assets";
+import aphrodite from "../assets/aphrodite.jpg";
+import bewithyou from "../assets/be with you.jpg";
+import sheeran from "../assets/kiss me.jpg";
+import swift from "../assets/lover.png";
+import edsheeran from "../assets/tenerife sea.jpg";
+import newwest from "../assets/those eyes.jpg";
+import theknobs from "../assets/walang kapantay.jpg";
+import sunsetz from "../assets/sunsetz.jpeg";
+
 
 function Music() {
   const navigate = useNavigate();
   // Customize and add your own songs
   const songs = [
     {
-      title: "Heavenly",
-      artist: "Cigarettes After Sex",
-      albumCover: heavenly, 
+      title: "Aphrodite",
+      artist: "The Ridleys",
+      albumCover: aphrodite, 
       left: "5%",
       top: "5%",
     },
     {
-      title: "The Boy Is Mine",
-      artist: "Brandy, Monica",
-      albumCover: brandy, 
+      title: "Be With You",
+      artist: "The Ridleys",
+      albumCover: bewithyou, 
       left: "40%",
       top: "15%",
     },
     {
-      title: "Die With A Smile",
-      artist: "Lady Gaga, Bruno Mars",
-      albumCover: bruno, 
+      title: "Kiss Me",
+      artist: "Ed Sheeran",
+      albumCover: sheeran, 
       left: '15%',
       top: '40%',
     },
     {
-      title: "Last Night on Earth",
-      artist: "Green Day",
-      albumCover: greenday, 
+      title: "Lover",
+      artist: "Taylor Swift",
+      albumCover: swift, 
       left: '30%',
       top: '75%',
     },
     {
-      title: "American Boy",
-      artist: "Estelle, Kanye West",
-      albumCover: kanye, 
+      title: "Tenerife Sea",
+      artist: "Ed Sheeran",
+      albumCover: edsheeran, 
       left: '5%',
       top: '65%',
     },
     {
-      title: "Sparks",
-      artist: "Coldplay",
-      albumCover: sparks, 
+      title: "Those Eyes",
+      artist: "New West",
+      albumCover: newwest, 
       left: '25%',
       top: '90%',
     },
     {
-      title: "Kiss Me Thru The Phone",
-      artist: "Soulja Boy, Sammie",
-      albumCover: souljaboy, 
+      title: "Walang Kapantay",
+      artist: "The Knobs",
+      albumCover: theknobs, 
       left: '35%',
       top: '50%',
     },
@@ -89,11 +97,12 @@ function Music() {
           >
             <div className="bg-white/10 backdrop-blur-lg rounded-xl p-4 flex items-center gap-4 w-56 h-[4rem]">
               <div className="w-12 h-12 flex-shrink-0">
-                <img
-                  src={song.albumCover}
-                  alt="Album cover"
-                  className="w-full h-full rounded-md object-cover"
-                />
+              <img
+  src={song.albumCover}
+  alt={`${song.title} album cover`} // This will dynamically generate the alt text
+  className="w-full h-full rounded-md object-cover"
+/>
+
               </div>
               <div className="flex-1 min-w-0">
                 <h2 className="text-white font-medium text-sm truncate">

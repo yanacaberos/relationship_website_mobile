@@ -1,5 +1,6 @@
 import React from 'react'
-import { picture } from '../assets'
+import firstAnnivImage from '../assets/first anniv.png'
+import endImage from '../assets/end.png'
 import Carousel from './Carousel'
 import { ImageCard } from './ImageCard'
 import {ArrowLeft } from './icons'
@@ -9,10 +10,10 @@ function Picture() {
   const navigate = useNavigate();
 
   const pictures = [
-    { Image: picture, title: 'September 3, 2024', description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, possimus!"},   
-    { Image: picture, title: 'September 3, 2024', description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, possimus!"},
-
+    { Image: endImage, title: 'December 27, 2024', description: "This is the day where we made up after nung malalang away natin and I thought that was the end pero we made it through."},   
+    { Image: firstAnnivImage, title: 'February 28, 2024', description: "First celebration of anniv natin. Even though it's simple celeb super glad pa rin ako for that day kasi I get to spend it with you."},
   ]
+  
   return (
   
     <div className="min-h-screen bg-black/20 flex flex-col items-center justify-center">

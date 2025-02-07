@@ -1,5 +1,7 @@
 import React from 'react'
-import {picture} from '../assets'
+// Import your images from the assets folder
+import sunsetImage from '../assets/sunset.png'
+import playgroundImage from '../assets/playground.png'
 import Carousel from './Carousel'
 import { ImageCard } from './ImageCard'
 import {ArrowLeft } from './icons'
@@ -10,10 +12,10 @@ function Message() {
 
   // customize your own picture, title and subtext. You can also add more picture.
   const pictures = [
-    { Image: picture, title: 'September 3, 2024', description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, possimus!"},   
-    { Image: picture, title: 'September 3, 2024', description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, possimus!"},
-
+    { Image: playgroundImage, title: 'February 27, 2024', description: "I know u may not like this picture of yours hehe. Pero this is one of my favorites kasi u just look happy there and makes me wanna immortalize that moment."},
+    { Image: sunsetImage, title: 'December 13, 2023', description: "This is my ultimate fave pic of u with a sunset background. Everything's perfect in this pic, the view, the sunset, and you. Won't get tired of having u and the sunset as my subject."},
   ]
+  
   return (
     <div className="min-h-screen bg-black/20 flex flex-col items-center justify-center">
 

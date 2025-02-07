@@ -11,7 +11,7 @@ function Question() {
   const inputRef = useRef(null);
 
   // Customize your own Trending Searches
-  const trends = ['Why is my bf so cute?', 'Why does Rheina love him more?', `Rheina's birthdate (coz her bf forgets)`,]
+  const trends = ['Why is my gf so cute?', 'Why does Yana love her more?', `I lab u bb`,]
 
   const handleSearch = (e) => {
     e.preventDefault()

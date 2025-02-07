@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 // Passcode
-const CORRECT_PASSCODE = '1018' 
+const CORRECT_PASSCODE = '0227' 
 
 function Passcode() {
     const [passcode, setPasscode] = useState([])
@@ -16,7 +16,7 @@ function Passcode() {
         if (newPasscode.length === 4) {
           const enteredPasscode = newPasscode.join('')
           if (enteredPasscode === CORRECT_PASSCODE) {
-            setMessage('Yayy!! :)')
+            setMessage('YEHEY!! :)')
             setTimeout(() => {
               setMessage('Redirecting...')
               navigate("/question");
@@ -57,10 +57,11 @@ function Passcode() {
 
             {/* Message */}
             {message && (
-            <div className={`mb-4 -mt-9 text-sm font-bold ${message === 'Yayy!! :)' ? 'text-green-500' : 'text-red-500'}`}>
-                {message}
-            </div>
-            )}
+  <div className={`mb-4 -mt-9 text-sm font-bold ${message === 'YEHEY!! :)' ? 'text-green-500' : 'text-red-500'}`}>
+    {message}
+  </div>
+)}
+
 
             {/* Number Pad */}
             <div className="grid grid-cols-3 gap-4 mb-8 max-w-full">
