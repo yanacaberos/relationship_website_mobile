@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-// Passcode
 const CORRECT_PASSCODE = '0227' 
 
 function Passcode() {
